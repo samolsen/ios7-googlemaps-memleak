@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+            <title></title>
+            
+            <style type="text/css" media="screen">
+                body { padding-top: 20px;}
+                #container { width:100%; height:200px; }
+                #container > div { height: 100%; width: 100%; }
+            </style>
+            
+            <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+            
+            
+            <script type="text/javascript" charset="utf-8">
+                
+                var domEl;
+                
+                function createMap() {
+                    var container = document.getElementById( 'container' );
+                    
+                    
+                    // Create fresh dom element
+                    //
+                    if( domEl ) {
+                        container.removeChild( domEl );
+                        console.log('removed old dom element');
+                    }
+                    
+                    domEl = document.createElement( 'div' );
+                    container.appendChild( domEl );
+                    
+                    // Create map
+                    //
+                    var mapOptions = {
+                        center: new google.maps.LatLng( -34.397, 150.644 ),
+                        zoom: 8,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    new google.maps.Map( domEl, mapOptions );
+                    
+                    return false;
+                }
+            </script>
+            
+            </head>
+    
+    <body>
+        
+        <a href="#" onclick="createMap();">Create map</a>
+        
+        <div id="container"></div>
+        
+    </body>
+</html>

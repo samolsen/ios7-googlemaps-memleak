@@ -13,11 +13,15 @@
 @end
 
 @implementation ViewController
-
+@synthesize webView=_webView;
+    
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSURL * url = [[NSBundle mainBundle] URLForResource:@"index.html" withExtension:nil];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning

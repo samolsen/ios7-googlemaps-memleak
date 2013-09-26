@@ -21,6 +21,7 @@
 		D8E0FF8E17F4C58600D87F35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0FF7017F4C58600D87F35 /* UIKit.framework */; };
 		D8E0FF9617F4C58600D87F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E0FF9417F4C58600D87F35 /* InfoPlist.strings */; };
 		D8E0FF9817F4C58600D87F35 /* WebViewMemoryLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0FF9717F4C58600D87F35 /* WebViewMemoryLeakTests.m */; };
+		D8E0FFA217F4C59A00D87F35 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D8E0FFA117F4C59A00D87F35 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D8E0FF9317F4C58600D87F35 /* WebViewMemoryLeakTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebViewMemoryLeakTests-Info.plist"; sourceTree = "<group>"; };
 		D8E0FF9517F4C58600D87F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E0FF9717F4C58600D87F35 /* WebViewMemoryLeakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewMemoryLeakTests.m; sourceTree = "<group>"; };
+		D8E0FFA117F4C59A00D87F35 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				D8E0FF8217F4C58600D87F35 /* ViewController.m */,
 				D8E0FF8417F4C58600D87F35 /* Images.xcassets */,
 				D8E0FF7317F4C58600D87F35 /* Supporting Files */,
+				D8E0FFA117F4C59A00D87F35 /* index.html */,
 			);
 			path = WebViewMemoryLeak;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E0FF8517F4C58600D87F35 /* Images.xcassets in Resources */,
+				D8E0FFA217F4C59A00D87F35 /* index.html in Resources */,
 				D8E0FF7717F4C58600D87F35 /* InfoPlist.strings in Resources */,
 				D8E0FF8017F4C58600D87F35 /* Main.storyboard in Resources */,
 			);
